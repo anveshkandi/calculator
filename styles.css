@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 20px;
+    width: 450px;
+    height: 650px;
+    border: 3px solid black;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 420px;
+    height: 125px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.screen .upper {
+    display: flex;
+    justify-content: right;
+    flex: 1;
+    align-items:  flex-end;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.screen .lower {
+    display: flex;
+    justify-content: right;
+    flex: 3;
+    align-items: flex-end;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.buttons {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 420px;
+    height: 480px;
+}
+
+.clr-del {
+    display: flex;
+    width: 410px;
+    height: 50px;
+    margin: 5px;
+    gap: 5px;
+}
+
+.clr-del #clear {
+    flex: 1;
+    border-radius: 10px;
+}
+
+.clr-del #delete {
+    flex: 1;
+    border-radius: 10px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 410px;
+    height: 410px;
+}
+
+.button-grid button {
+    border-radius: 100%;
+}
