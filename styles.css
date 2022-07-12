@@ -27,6 +27,8 @@ h1 {
     height: 650px;
 }
 
+/* SCREEN */
+
 .screen {
     display: flex;
     flex-direction: column;
@@ -60,6 +62,8 @@ h1 {
     border-radius: 15px;
     font-size: 24px;
 }
+
+/* BUTTONS */
 
 .buttons {
     display:flex;
@@ -120,3 +124,27 @@ h1 {
 
 .button-grid .number { background-color: darkolivegreen; }
 .button-grid .special { background-color: rgb(212, 158, 59); }
+
+/* FOOTER */
+
+.footer {
+    color: white;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 8px;
+}
+
+
+.footer a {
+    color:white;
+    transition: transform 0.2s;
+}
+
+.footer a:hover {
+   transform: scale(1.2);
+}
