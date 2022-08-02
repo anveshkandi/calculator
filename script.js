@@ -42,7 +42,6 @@ buttonGrid.forEach((button) => {
     button.addEventListener('click', () => {
         firstNumExists = true;
         if(firstNumExists && !firstNumSet){
-            console.log(button.textContent);
             firstOp.push(button.textContent);
             firstOperation = firstOp.join('');
             lower.textContent = firstOperation;
@@ -59,10 +58,8 @@ buttonGrid.forEach((button) => {
 
 specBtns.forEach(button => {
     button.addEventListener('click', () => {
-        console.log('I pressed a spec button!');
         firstNumSet = true;
         operator = button.textContent;
-        console.log(operator)
         upper.textContent = `${lower.textContent} ${button.textContent}`;
     })
 })
@@ -85,11 +82,8 @@ evalBtn.addEventListener('click', () => {
 
     firstOperation = temp;
     secOp = [];
-    lower.textContent = temp;
+    lower.textContent = parseFloat(temp.toFixed(3));
     upper.textContent = '';
-    console.log(firstOperation);
-    console.log(firstNumExists);
-    console.log(firstNumSet);
 })
 
 function multiply (a,b) {
